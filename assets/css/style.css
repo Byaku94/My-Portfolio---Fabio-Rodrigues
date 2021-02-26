@@ -1,0 +1,34 @@
+*{
+ background-color: var(--theme2);   
+}
+:root{
+--theme1:rgb(255, 230, 0);
+--theme2:black;
+--theme3:white;
+}
+.profile_img{
+display:flex;
+flex:1 0 310px;
+width:25%;
+margin:5% auto;
+border:0 solid black;
+
+    
+}
+.header_links{
+display: flex;
+width: 33.333%;
+border:0 var (--theme)
+}
+
+/*Glow animation for hovering links*/
+
+.clickable .clickable-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+.clickable:hover,
+.clickable:hover .clickable-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+  }
