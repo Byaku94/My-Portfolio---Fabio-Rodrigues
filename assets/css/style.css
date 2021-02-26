@@ -1,10 +1,24 @@
 *{
  background-color: var(--theme2);   
+ box-sizing: border-box;
 }
 :root{
 --theme1:rgb(255, 230, 0);
 --theme2:black;
 --theme3:white;
+}
+
+h1{
+color:var(--theme1);
+text-decoration: bold;
+font-size: 72px;
+font: 'Ariel', 'Times New Roman', 'sans-serif'; 
+}
+p{
+text-indent: 2%;
+color:var(--theme1);
+font:'Times New Roman', 'sans-serif';
+font-size: 25px;
 }
 .profile_img{
 display:flex;
@@ -12,15 +26,54 @@ flex:1 0 310px;
 width:25%;
 margin:5% auto;
 border:0 solid black;
-
-    
+float:left;
+margin-left: 100px;    
 }
 .header_links{
-display: flex;
-width: 33.333%;
-border:0 var (--theme)
+display:inline-block;
+width:20%;
+border:5px solid var(--theme1);
+position: relative;
+color:var(--theme1);
+text-align: center;
+font-size: 44px;
+font: 'Roboto', 'Ariel', 'sans-serif';
+text-decoration: bold;
+justify-content: space-between;
+border-radius: 200px;
+
+
+}
+.space_between_links{
+display:flex;
+position: fixed;
+flex-direction: column;
+width:13%;
+justify-content: space-around;
+content: "                   ";
+
+}
+.header_links::after{
+display: inline-block;
+content: "\2059";
+align-content: center;
+}
+.main_page{
+border: 5px dotted var(--theme1); 
+display:block;
+block-size: 100%; 
+}
+.links div{
+    position: relative;
+    display: inline-block;
+    direction: row;
+    }
+section{
+    display: contents;
+    border-spacing: 100px;
 }
 
+  
 /*Glow animation for hovering links*/
 
 .clickable .clickable-header {
