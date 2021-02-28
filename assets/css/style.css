@@ -28,6 +28,7 @@ margin:5% auto;
 border:0 solid black;
 float:left;
 margin-left: 100px;    
+margin-right: 25px;    
 }
 .header_links{
 display:inline-block;
@@ -44,15 +45,7 @@ border-radius: 200px;
 
 
 }
-.space_between_links{
-display:flex;
-position: fixed;
-flex-direction: column;
-width:13%;
-justify-content: space-around;
-content: "                   ";
 
-}
 .header_links::after{
 display: inline-block;
 content: "\2059";
@@ -68,12 +61,30 @@ block-size: 100%;
     display: inline-block;
     direction: row;
     }
+.links-column{
+  flex: 0 0 33.333%;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 section{
     display: contents;
     border-spacing: 100px;
 }
+.header_links_space{
+  color:var(--theme2);
+  font-size: 62px;
+  display: contents;
+}
 
+.banner{
+  display:flex;
+  flex:1 1 25%;
+  float: left;
+}
+
+.Work-page{
   
+}
 /*Glow animation for hovering links*/
 
 .clickable .clickable-header {
