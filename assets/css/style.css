@@ -118,16 +118,28 @@ section{
   margin: -4rem 0 1.5rem 0;
   border-radius: 8px;
 }
-
-  #clickable{
+ .project-display .project-header #green-border-project-header
+ {
+   position: flex;
+    border: 2px solid rgb(0, 228, 68);
+    background-color: var(--theme2);
+    color: var(--theme1);
+    margin: -4rem 0 1.5rem 0;
+    border-radius: 8px;
+}
+#clickable1, #clickable1 {
 
 }
-
+  
+}
 #clickable:hover{
   box-shadow: inset 0px 0px 20px var(--theme1), 0 0 35px var(--theme1);
 }
 /*Glow animation for hovering links*/
 
+#clickable1:hover{
+  box-shadow: inset 0px 0px 20px rgb(0, 228, 68), 0 0 35px rgb(0, 228, 68);
+}
 .clickable .clickable-header {
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
