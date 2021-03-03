@@ -1,5 +1,5 @@
 *{
- background-color: var(--theme2);   
+   
  box-sizing: border-box;
 }
 :root{
@@ -7,12 +7,25 @@
 --theme2:black;
 --theme3:white;
 }
-
+html{
+background-color: var(--theme2); 
+}
 h1{
 color:var(--theme1);
 text-decoration: bold;
 font-size: 72px;
 font: 'Ariel', 'Times New Roman', 'sans-serif'; 
+}
+h2{
+  color:var(--theme1);
+  text-decoration: bold;
+  font-size: 24px;
+  display:relative;
+}
+a {
+  color:var(--theme1);
+  text-decoration: none;
+  background-color: none;
 }
 p{
 text-indent: 2%;
@@ -45,12 +58,6 @@ border-radius: 200px;
 
 
 }
-
-.header_links::after{
-display: inline-block;
-content: "\2059";
-align-content: center;
-}
 .main_page{
 border: 5px dotted var(--theme1); 
 display:block;
@@ -78,21 +85,56 @@ section{
 
 .banner{
   display:flex;
-  flex:1 1 25%;
+  flex:1 0 25%;
   float: left;
 }
 
 .Work-page{
-  
+
+}
+/*Making of the grid for the display of my Work*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.column{
+  flex: 1 0 70%;
+  padding: 1.5rem;
+}
+.project-display{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 5%;
+  color: var(--theme1);
+}
+.project-display .project-header {
+  position: flex;
+  border: 2px solid var(--theme1);
+  background-color: var(--theme2);
+  color: var(--theme1);
+  margin: -4rem 0 1.5rem 0;
+  border-radius: 8px;
+}
+
+  #clickable{
+
+}
+
+#clickable:hover{
+  box-shadow: inset 0px 0px 20px var(--theme1), 0 0 35px var(--theme1);
 }
 /*Glow animation for hovering links*/
 
 .clickable .clickable-header {
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
+    
   }
   
 .clickable:hover,
-.clickable:hover .clickable-header {
-    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+.clickable:hover {
+    box-shadow: inset 0px 0px 8px var(--theme1), 0 0 15px var(--theme1);
   }
