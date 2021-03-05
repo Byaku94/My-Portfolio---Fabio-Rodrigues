@@ -73,26 +73,57 @@ block-size: 100%;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
 }
-section{
-    display: contents;
-    border-spacing: 100px;
-}
+
 .header_links_space{
   color:var(--theme2);
   font-size: 62px;
   display: contents;
 }
 
-.banner{
+.banner-left{
   display:flex;
   flex:1 0 25%;
   float: left;
 }
 
-.Work-page{
+.banner-right{
+  display:flex;
+  flex:1 0 25%;
+  float: right;
+}
+.twitch-logo{
+  display:flex;
+  float:left;
+  direction:row;
+}
+.work-page{
 
 }
-/*Making of the grid for the display of my Work*/
+.twitch-page{
+  display:contents;
+  float:left;
+  direction:row;
+  align-content: flex-start;
+  flex:1 0 74%;    
+}
+section{
+    display: contents;
+    border-spacing: 100px;
+}
+
+.twitch-title{
+  line-height: 3.5;
+  font-size: 124px;
+  float: left;
+  align-items: center;
+  margin-left:2%;
+}
+.twitch-emotes{
+  display:flex;
+  float:right;
+}
+
+/*Making of the grid for the display of my Work-page*/
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -150,3 +181,7 @@ section{
 .clickable:hover {
     box-shadow: inset 0px 0px 8px var(--theme1), 0 0 15px var(--theme1);
   }
+
+
+  /* Configuration of twitch player*/
+
