@@ -11,6 +11,7 @@ html{
 background-color: var(--theme2); 
 }
 h1{
+display: inline-flex;
 color:var(--theme1);
 text-decoration: bold;
 font-size: 72px;
@@ -41,7 +42,9 @@ margin:5% auto;
 border:0 solid black;
 float:left;
 margin-left: 100px;    
-margin-right: 25px;    
+margin-right: 25px;  
+max-height: fit-content;
+max-width: fit-content;  
 }
 .header_links{
 display:inline-block;
@@ -100,9 +103,9 @@ block-size: 100%;
 
 }
 .twitch-page{
-  display:contents;
+ 
   float:left;
-  direction:row;
+ 
   align-content: flex-start;
   flex:1 0 74%;    
 }
@@ -112,17 +115,26 @@ section{
 }
 
 .twitch-title{
-  line-height: 3.5;
-  font-size: 124px;
+  line-height: 1;
+  font-size: 100px;
   float: left;
-  align-items: center;
+  direction: row;
   margin-left:2%;
+  padding-top: 25px;
 }
 .twitch-emotes{
   display:flex;
   float:right;
+  margin-right: 8%;
 }
-
+.first-project{
+  margin-top: 12%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  min-height: 100%;
+  color: var(--theme1);
+}
 /*Making of the grid for the display of my Work-page*/
 .row {
   display: flex;
@@ -138,15 +150,17 @@ section{
   justify-content: flex-start;
   flex-direction: column;
   min-height: 100%;
-  padding: 5%;
+  padding: 3%;
   color: var(--theme1);
+  
 }
+
 .project-display .project-header {
   position: flex;
   border: 2px solid var(--theme1);
   background-color: var(--theme2);
   color: var(--theme1);
-  margin: -4rem 0 1.5rem 0;
+ 
   border-radius: 8px;
 }
  .project-display .project-header #green-border-project-header
@@ -185,3 +199,7 @@ section{
 
   /* Configuration of twitch player*/
 
+.display-iframe{
+  
+ margin-left: 18%;
+}
