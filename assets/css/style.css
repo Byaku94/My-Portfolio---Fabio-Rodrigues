@@ -10,6 +10,12 @@
 html{
 background-color: var(--theme2); 
 }
+
+ul li.contacts{
+display:flex;
+margin:auto;
+
+}
 h1{
 display: inline-flex;
 color:var(--theme1);
@@ -22,6 +28,15 @@ h2{
   text-decoration: bold;
   font-size: 24px;
   display:relative;
+}
+h3{
+  color:var(--theme1);
+  text-decoration: bold;
+  font-size: 48px;
+  display:block;
+  position: relative;
+  left:25%;
+  text-align: center;
 }
 a {
   color:var(--theme1);
@@ -99,6 +114,18 @@ block-size: 100%;
   float:left;
   direction:row;
 }
+.banner-top{
+display: block;
+position: relative;
+left: 18%;
+}
+.contacts-img{
+  display: inline-block;
+  position: relative;
+  left: 20%;
+  }
+
+  
 .work-page{
 
 }
@@ -163,7 +190,7 @@ section{
  
   border-radius: 8px;
 }
- .project-display .project-header #green-border-project-header
+ .project-display .green-border-project-header .project-header 
  {
    position: flex;
     border: 2px solid rgb(0, 228, 68);
@@ -193,7 +220,7 @@ section{
   
 .clickable:hover,
 .clickable:hover {
-    box-shadow: inset 0px 0px 8px var(--theme1), 0 0 15px var(--theme1);
+    box-shadow: inset 0px 0px 20px var(--theme1), 0 0 35px var(--theme1);
   }
 
 
@@ -201,5 +228,6 @@ section{
 
 .display-iframe{
   
-margin-top:35%;
+margin-top:2%;
 }
+
