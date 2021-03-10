@@ -4,7 +4,7 @@ My professional portfolio.
 
 Link to Git-Hub Repository -- https://github.com/Byaku94/My-Portfolio---Fabio-Rodrigues 
 
-This is a placeholder website (structure) for my potential professional portfolio!
+This is a placeholder website (structure) for my potential professional portfolio! Also the homework for week 2 of the Bootcamp /w Carleton University!
 
 So far I have added 4 main pages:
  - Bio
