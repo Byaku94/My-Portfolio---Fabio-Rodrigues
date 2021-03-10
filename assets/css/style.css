@@ -11,6 +11,11 @@ html{
 background-color: var(--theme2); 
 }
 
+.align-link{
+  display:block;
+  position: relative;
+  left: 19%;
+}
 ul li.contacts{
 display:flex;
 margin:auto;
